@@ -2,11 +2,11 @@ CPP = g++
 
 CFLAGS = -g -Wall -Wextra -Werror -std=c++98
 
-NAME = Zombie
+NAME = brain
 
 OBJ_DIR = obj
 
-SRCS = main.cpp newZombie.cpp Zombie.cpp randomChump.cpp
+SRCS = main.cpp
 
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
