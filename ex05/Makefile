@@ -6,7 +6,7 @@ NAME = sed
 
 OBJ_DIR = obj
 
-SRCS = main.cpp
+SRCS = main.cpp Harl.cpp
 
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
