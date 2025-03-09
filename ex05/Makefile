@@ -2,7 +2,7 @@ CPP = g++
 
 CFLAGS = -g -Wall -Wextra -Werror -std=c++98
 
-NAME = sed
+NAME = harl
 
 OBJ_DIR = obj
 
