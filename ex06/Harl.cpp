@@ -6,7 +6,7 @@
 /*   By: inowak-- <inowak--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/08 14:53:20 by inowak--          #+#    #+#             */
-/*   Updated: 2025/03/10 16:29:42 by inowak--         ###   ########.fr       */
+/*   Updated: 2025/03/10 16:56:52 by inowak--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,6 @@ void Harl::complain(std::string level){
 	for (lvl = 0; level != levels[lvl] && lvl < 4; lvl++){};
 	
 	switch(lvl){
-		default:
-			std::cout << "[ Probably complaining about insignificant problems ]\n";
 		case 0:
 			Harl::debug();
 		case 1:
@@ -46,5 +44,8 @@ void Harl::complain(std::string level){
 			Harl::warning();
 		case 3:
 			Harl::error();
+			break;	
+		default:
+			std::cout << "[ Probably complaining about insignificant problems ]\n";
 	}
 }
